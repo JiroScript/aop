@@ -1,0 +1,164 @@
+
+/* 共通スタイル */
+body {
+    font-family: 'Roboto', sans-serif; /* モダンなフォントに変更 */
+    background-color: #f7f7f7; /* 背景色を明るく */
+    color: #333; /* テキストの色を濃く */
+}
+
+h1 {
+    background-color: #ff4500; /* ヘッダーの色をオレンジに */
+    color: #fff; /* テキストの色を白に */
+    padding: 10px; /* パディングを追加 */
+    border-radius: 5px; /* 角を丸く */
+}
+
+input[type="button"] {
+    background-color: #ff4500; /* ボタンの色をオレンジに */
+    color: #fff; /* テキストの色を白に */
+    border: none; /* ボーダーをなくす */
+    padding: 10px 20px; /* パディングを追加 */
+    border-radius: 5px; /* 角を丸く */
+    transition: 0.3s; /* クリック時のアニメーション */
+}
+
+input[type="button"]:hover {
+    background-color: #ff6347; /* ホバー時の色を変更 */
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.2em; /* フォントサイズを小さく */
+    }
+    
+    /* その他のスマホ対応のスタイルを追加... */
+}
+
+
+h2, h3{
+    display: inline;
+    margin-right: 5px;
+}
+
+.year ~ input{
+    font: 1.5em Helvetica;
+
+}
+input.one{
+    border-radius:3px;
+    color: white;
+    background-color:  gray;
+}
+input.ten{
+    border-radius:15px;
+    color: white;
+    background-color:  dimgray;
+}
+input#year{
+    border: none; /* ボーダーをなくす */
+}
+svg{
+    font: 0.5em sans-serif;
+    background-color: #eee;
+    text-align: right;
+    color: #333;
+}
+
+#total-population{
+    font: 1em sans-serif;
+    display: inline;
+    color: white;
+}
+
+#average-age{
+    font: 1em sans-serif;
+    display: inline;
+    color: white;
+}
+#data{
+    display: inline;
+}
+
+.headline{
+    background-color: rgba(0, 0, 0, 0.800);
+    font: 10.5em sans-serif ;
+    color: white;
+    padding-inline: 12px;
+    margin-right: 4px;
+}
+
+.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+#dataDisplay{
+    display:none !important;
+    font: 7px sans-serif;
+    color: white;
+}
+
+span.population{
+    font: 0.8em sans-serif;
+    padding: 2px;
+}
+span.average-age{
+    font: 1.1em sans-serif;
+    padding: 2px;
+}
+small.headline{
+    background-color: rgba(0, 0, 0, 0.800);
+    font: 0.8em sans-serif ;
+    color: white;
+    padding: 1px 4px;
+    margin: 2px;
+}
+.headline{
+    display:inline-block;
+}
+
+.hide{
+    display:none;
+}
+
+.chip {
+    font: 1em Helvetica;
+    display: inline-block;
+    padding-inline: 10px;
+    border: 3px solid dimgray;
+    background-color: #fff;
+    margin: 3px;
+    cursor: pointer;
+    border-radius: 1em;
+}
+.chip.active {
+    background-color: #000;
+    color: #fff;
+    transform: translateX(+5%);
+}
+#chip-container{
+  background-color: rgba(0, 0, 0, 0.000);
+}
+small{
+    pointer-events: none; /*クリック・タッチを無効化*/
+}
+
+#locationSelect{
+    margin: 2px;
+    padding: 2px; 
+    font: 1.5em Helvetica ;
+    border-radius: 5px; 
+}
+
+select[name="regions"] {
+    margin: 2px;
+    padding: 2px; 
+    font: 1em Helvetica ;
+    border-radius: 5px; 
+}

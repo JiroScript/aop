@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
+<link rel="stylesheet" type="text/css" href="pop.css"/>
+<title>Age of Population</title>
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<script type="module" src="pr.js"></script>
+<script type="module" src="ele.js"></script>
+<script type="module" src="pp.js"></script>
+<script type="module" src="chi.js"></script>
+<script type="module" src="fh.js"></script>
+
+</head>
+<body>
+  <h1>Age of Population</h1>
+  <!-- -->
+  <select id="locationSelect"></select>
+  <select name="regions"></select><br>
+  
+  <div style="display:inline-block">
+  <label for="year" class="year" ></label>  
+  <input type="button" id="minusTen" class ="ten" value="-10">
+  <input type="button" id="minus" class="one" value="-1">
+  <input type="number" id="year" min="1950" max="2100" readonly >
+  <input type="button" id="plus" class="one" value="+1">
+  <input type="button" id="plusTen" class ="ten" value="+10">
+  </div>
+
+  <div id="dataDisplay" ></div>
+
+  <!-- chips -->
+  <div id="chip-container" >
+    <div class="chip" data-name="low">Low<small>&nbsp;variant</small></div>
+    <div class="chip" data-name="medium">Medium<small>&nbsp;variant</small></div>
+    <div class="chip" data-name="high">High<small>&nbsp;variant</small></div>
+  </div>
+  <!---->
+  <section class="sect hide total">
+    <h2 class="population_average hide"></h2>
+    <div class="total"></div>
+  </section>
+  <section class="sect hide low">
+    <h2 class="population_average hide"></h2>
+    <div class="low"></div>
+  </section>
+  <section class="sect hide medium">
+    <h2 class="population_average hide"></h2>
+    <div class="medium"></div>
+  </section>
+  <section class="sect hide high">
+    <h2 class="population_average hide"></h2>
+    <div class="high"></div>
+  </section>
+  
+</body>
+</html>
