@@ -12,8 +12,8 @@ Age of Populationは、1950～2100年における世界192ヶ国の国と地域�
 
 ## 開発環境
 JavaScript
-Node.js
-MySQL
+Node.js v18.17.1
+MySQL Ver 8.0.34 for Linux on x86_64
 
 ## 作成者
 Your Name
