@@ -1,25 +1,3 @@
-/*
-Error: ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client
-上記のエラーに対し下記をターミナルで実行することで解決できた。
-
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password'
-*/
-/*
-expressモジュールがインストール
-ターミナルまたはコマンドプロンプトを開きます。
-プロジェクトのルートディレクトリに移動します（app.jsファイルが存在するディレクトリ）。
-次のコマンドを実行して、expressモジュールをインストールします：
-
-npm install express
-npm install mysql
-npm install cors
-*/
-
-/*
-C:\Users\goths>ipconfig
-Wireless LAN adapter Wi-Fi:
-   IPv4 アドレス . . . . . . . . . . . .: 192.168.254.43
-*/
 const express = require('express');
 const mysql = require('mysql');
 const app = express();
